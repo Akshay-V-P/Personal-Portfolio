@@ -4,6 +4,7 @@ const subject=document.getElementById("subject")
 const message = document.getElementById("message")
 const submitBtn = document.getElementById("submit-btn")
 const formList = [fullName, email, subject, message]
+const nameBrand = document.getElementById("name")
 let params={}
 
 submitBtn.addEventListener("click", () => {
@@ -30,3 +31,4 @@ function alertNovalue(element) {
 function submitEmail() {
   emailjs.send("service_fvf9mhq", "template_uj1bcgk", params).then(alert("Email send"))
 }
+
